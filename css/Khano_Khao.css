@@ -1,0 +1,195 @@
+/* CSS RESET */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Baloo Bhai ", cursive;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* CSS VARIABLE */
+:root {
+  --navbar-height: 69px;
+}
+/* NAVIGATION BAR */
+#navbar {
+  display: flex;
+  align-items: center;
+}
+/* NAVIGATION BAR:LOGO */
+.logo {
+  margin: 30px 30px;
+}
+.logo img {
+  margin: 3px 5px;
+  height: 75px;
+}
+
+/* NAVIGATION BAR:LIST STYLING */
+#navbar {
+  position: sticky;
+  height: 80px;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.1;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.4rem;
+}
+#navbar ul li a {
+  padding: 10px 22px;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 570px;
+  align-items: center;
+  color: white;
+}
+#home::before {
+  content: " ";
+  position: absolute;
+  background: url("https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_960_720.jpg") no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  height: 642px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.85679;
+}
+#home {
+  color: white;
+  text-align: center;
+}
+/* SERVICES SECTION */
+
+#services {
+  margin: 34px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid red;
+  margin: 23px;
+  padding: 23px;
+  border-radius: 23px;
+  background-color: rgb(243, 234, 234);
+}
+#services .box img {
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+/* CLIENT SECTION */
+#client-section {
+  position: relative;
+}
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("../images/eat-2834549_1920.jpg");
+  height: 300px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-items img {
+  height: 124px;
+  padding: 24px;
+}
+
+/* CONTACT */
+#contact {
+  position: relative;
+  margin-top: 120px;
+  color: white;
+}
+#contact::before {
+  content: "";
+  background: url("https://cdn.pixabay.com/photo/2018/09/24/10/19/system-3699542_960_720.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 108%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+#contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-form input {
+  padding: 10px 25px;
+  margin: 20px;
+  border-radius: 25px;
+}
+#contact-form select {
+  padding: 10px 25px;
+  margin: 20px;
+  border-radius: 25px;
+}
+#contact-form label {
+  font-size: 1.2rem;
+}
+
+/* footer */
+#footer {
+  margin-top: 45px;
+  background-color: rgb(110, 110, 110);
+  color: white;
+}
+
+/* untility class */
+.hprimary {
+  font-size: 3.8rem;
+  padding: 12px;
+}
+.hsecondary {
+  font-size: 2.8rem;
+  padding: 12px;
+}
+.hkeneecheh4 {
+  font-size: 1.8rem;
+  padding: 12px;
+}
+.center {
+  text-align: center;
+}
+.btn {
+  padding: 5px 25px;
+  color: white;
+  background-color: rgb(255, 102, 0);
+  /* border: 1px solid white; */
+  border-radius: 45px;
+  margin-top: 22px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
